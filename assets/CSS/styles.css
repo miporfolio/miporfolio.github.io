@@ -659,9 +659,7 @@ header {
 .container__grados .tercero_basico_cuadro .boton_tercero:hover {
     box-shadow: 2px 2px 50px 5px white;
 }
-
-/*Haciendo la página responsive*/
-
+ /*PÁGINA RESPONSIVE*/
 @media screen and (max-width: 1449px) {
     .container__grados .primero_basico_cuadro .boton_primero{
         margin-left: 0;
@@ -675,7 +673,156 @@ header {
 
 }
 
-@media screen and (max-width: 1206){
+@media screen and (max-width: 1206px){
+    .container__grados .primero_basico_cuadro .boton_primero{
+        width: 213px;
+        height: 81px;
+        margin-left: -150px;
+    }
+    .container__grados .segundo_basico_cuadro .boton_segundo{
+        width: 213px;
+        height: 81px;
+        margin-left: -150px;
+    }
+    .container__grados .tercero_basico_cuadro .boton_tercero{
+        width: 213px;
+        height: 81px;
+        margin-left: -150px;
+    }
+    .container__grados .primero_basico_cuadro .primero_text {
+        font-size: 90px;
+        margin-right: -50px;
+        margin-top: 4%;
+    }
+    .container__grados .segundo_basico_cuadro .segundo_text {
+        font-size: 90px;
+        margin-right: -50px;
+        margin-top: 4%;
+    }
+    .container__grados .tercero_basico_cuadro .tercero_text {
+        font-size: 90px;
+        margin-right: -50px;
+        margin-top: 4%;
+    }
+    .container__menu .menu {
+        align-items: center;
+    }
+    .container__cover .cover .sombra_slogan {
+        width: 790px;
+        height: 159px;
+        flex-shrink: 0;
+        border-radius: 47px;
+    }
 
 }
->>>>>>> 989d27d9957fd5b350d7d4d31a70ed3f4c9f7f3c
+
+@media screen and (max-width: 1003px) {
+    /* CONTENEDORES PRINCIPALES */
+    .container__grados .primero_basico_cuadro {
+        height: 500px;
+    }
+    .container__grados .segundo_basico_cuadro {
+        height: 500px;
+    }
+    .container__grados .tercero_basico_cuadro {
+        height: 500px;
+        align-items: center;
+        text-align: center;
+    }
+    /* TEXTO */
+    .container__grados .primero_basico_cuadro .container_text_primero {
+        display: block;
+        position: absolute;
+        margin-top: 10px;
+        top: 820px;
+        z-index: 1;
+        align-items: center;
+    }
+    .container__grados .segundo_basico_cuadro .container_text_segundo {
+        display: block;
+        position: absolute;
+        margin-top: 10px;
+        top: 1320px;
+        z-index: 1;
+        align-items: center;
+    }
+    .container__grados .tercero_basico_cuadro .container_text_tercero {
+        display: block;
+        position: absolute;
+        margin-top: 10px;
+        top: 1820px;
+        z-index: 1;
+        align-items: center;
+    }
+    /* ALINEAMOS TEXTO */
+    .container__grados .primero_basico_cuadro{
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    .container__grados .segundo_basico_cuadro {
+        align-items: center;
+        text-align: center;
+    }
+    .container__grados .tercero_basico_cuadro {
+        align-items: center;
+        text-align: center;
+    }
+    /* BOTONES */
+    .container__grados .primero_basico_cuadro .boton_primero {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 1140px;
+        align-items: center;
+        text-align: center;
+    }
+    .container__grados .segundo_basico_cuadro .boton_segundo{
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 1640px;
+        align-items: center;
+        text-align: center;
+    }
+    .container__grados .tercero_basico_cuadro .boton_tercero {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 2140px;
+        align-items: center;
+        text-align: center;
+    }
+    
+}
+
+@media screen and (max-width: 814px) {
+    .container__cover .cover .sombra_slogan {
+        width: 590px;
+        height: 159px;
+        flex-shrink: 0;
+        
+    }
+
+}
+@media screen and (max-width: 600px ){
+    .container__cover .cover .sombra_slogan {
+        width: 390px;
+        height: 109px;
+        flex-shrink: 0;
+        
+    }
+    .container__cover .cover .slogan h1 {
+        font-size: 52px;
+    }
+    .container__grados .primero_basico_cuadro .container_text_primero {
+        font-size: 20px;
+    }
+    .container__grados .segundo_basico_cuadro .container_text_segundo {
+        font-size: 20px;    
+    }
+    .container__grados .tercero_basico_cuadro .container_text_tercero {
+        font-size: 20px;
+    }
+}
