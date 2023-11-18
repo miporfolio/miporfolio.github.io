@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
@@ -155,6 +154,7 @@ header {
     cursor: pointer;
     box-shadow: 2px 2px 50px 2px black;
     transition: all 300ms;
+    border: none;
     
 }
 .container__grados .primero_basico_cuadro .boton_primero:hover {
@@ -168,7 +168,7 @@ header {
     width: 100%;
     height: 300px;
     flex-shrink: 0;
-    background-color: white;
+    background-color:  #F5F5DC;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -191,17 +191,18 @@ header {
     height: 81px;
     flex-shrink: 0;
     border-radius: 30px;
-    background: black;
+    background: #D2B48C;
+    border: none;
     color: white;
     font-size: 24px;
     text-transform: uppercase;
     margin-left: 291px;
     cursor: pointer;
-    box-shadow: 2px 2px 50px 2px white;
+    box-shadow: 2px 2px 50px 2px #F5F5DC;
     transition: all 300ms;
 }
 .container__grados .segundo_basico_cuadro .boton_segundo:hover {
-    box-shadow: 2px 2px 50px 5px black;
+    box-shadow: 2px 2px 50px 5px #D2B48C;
 }
 
 /* TERCERO */
@@ -242,7 +243,7 @@ header {
     transition: all 300ms;
 }
 .container__grados .tercero_basico_cuadro .boton_tercero:hover {
-    box-shadow: 2px 2px 50px 5px white;
+    box-shadow: 2px 2px 50px 5px #F5F5DC;
 }
 
 /*Haciendo la página responsive*/
@@ -413,416 +414,22 @@ header {
         font-size: 20px;
     }
 }
-=======
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-header {
-    width: 100%;
-    height: 120px;
-    margin-top: 0px;
-    /*position: fixed;*/
-    z-index: 1;
-    background-color: black;
+@media screen and (max-width: 515px) {
+    .menu ul li a {
+        font-size: 15px;
+    }
+    .menu ul li{
+        margin-left: 25px;
+    }
+    .container__grados .primero_basico_cuadro .container_text_primero .primero_text {
+        font-size: 50px;
+    }
+    .container__grados .segundo_basico_cuadro .container_text_segundo .segundo_text {
+        font-size: 50px;
+    }
+    .container__grados .tercero_basico_cuadro .container_text_tercero .tercero_text {
+        font-size: 50px;
+    }
 }
-
-.container__menu {
-    max-width: 1200px;
-    height: 100%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-
-.container__menu .menu {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-.menu ul{
-    display:flex;
     
-}
-.menu ul li{
-    
-    list-style: none;
-    display: flex;
-    margin-left: 36px;
-}
-.menu ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 24px;
-    text-transform: uppercase;
-}
-
-/*Cover*/
-.container__cover{
-    width: 100%;
-    height: 700px;
-    background-image: url(Imagen_fondo_inicio.jpg);
-    align-items: center;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-/* OBJETOS CON SOMBRA */
-.container__cover .cover {
-    width: 100%; 
-    text-align: center; 
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-
-
-.container__cover .cover .sombra_logo {
-    position: absolute;
-    display: flex;
-    width: 391px;
-    height: 310px;
-    flex-shrink: 0;
-    border-radius: 47px;
-    background: rgba(0, 0, 0, 0.65);
-    top: 170px;
-    align-items: center;
-
-    
-}
-.container__cover .cover .sombra_logo .contenedor_logo {
-    width: 100%;
-    max-width: 100%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-
-.container__cover .cover .sombra_slogan {
-    position: absolute;
-    display: flex;
-    width: 990px;
-    height: 179px;
-    flex-shrink: 0;
-    border-radius: 47px;
-    background: rgba(0, 0, 0, 0.65);
-    top: 600px;
-    align-items: center;
-    text-align:center;
-}
-.container__cover .cover .slogan {
-    text-align: center;
-    width: 100%;
-    max-width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.container__cover .cover .slogan h1 {
-    color: white;
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 72px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-align: center;
-}
-
-/* GRADOS */
-
-/* PRIMERO */
-.container__grados .primero_basico_cuadro {
-    width: 100%;
-    height: 300px;
-    flex-shrink: 0;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.container__grados .primero_basico_cuadro .primero_text {
-    width: 832px;
-    height: 141px;
-    flex-shrink: 0;
-    color: #FFF;
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 128px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.container__grados .primero_basico_cuadro .boton_primero {
-    width: 313px;
-    height: 81px;
-    flex-shrink: 0;
-    border-radius: 30px;
-    background: #E3E3E3;
-    color: black;
-    font-size: 24px;
-    text-transform: uppercase;
-    margin-left: 291px;
-    cursor: pointer;
-    box-shadow: 2px 2px 50px 2px black;
-    transition: all 300ms;
-    
-}
-.container__grados .primero_basico_cuadro .boton_primero:hover {
-    box-shadow: 2px 2px 50px 5px white;
-}
-
-
-/* SEGUNDO */
-
-.container__grados .segundo_basico_cuadro {
-    width: 100%;
-    height: 300px;
-    flex-shrink: 0;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.container__grados .segundo_basico_cuadro .segundo_text {
-    width: 832px;
-    height: 141px;
-    flex-shrink: 0;
-    color: black;
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 128px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.container__grados .segundo_basico_cuadro .boton_segundo {
-    width: 313px;
-    height: 81px;
-    flex-shrink: 0;
-    border-radius: 30px;
-    background: black;
-    color: white;
-    font-size: 24px;
-    text-transform: uppercase;
-    margin-left: 291px;
-    cursor: pointer;
-    box-shadow: 2px 2px 50px 2px white;
-    transition: all 300ms;
-}
-.container__grados .segundo_basico_cuadro .boton_segundo:hover {
-    box-shadow: 2px 2px 50px 5px black;
-}
-
-/* TERCERO */
-.container__grados .tercero_basico_cuadro {
-    width: 100%;
-    height: 300px;
-    flex-shrink: 0;
-    background-color: #D2B48C;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-.container__grados .tercero_basico_cuadro .tercero_text {
-    width: 832px;
-    height: 141px;
-    flex-shrink: 0;
-    color: #FFF;
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 128px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-.container__grados .tercero_basico_cuadro .boton_tercero {
-    width: 313px;
-    height: 81px;
-    flex-shrink: 0;
-    border-radius: 30px;
-    background: #E3E3E3;
-    color: black;
-    font-size: 24px;
-    text-transform: uppercase;
-    margin-left: 291px;
-    border: none;
-    cursor: pointer;
-    box-shadow: 2px 2px 50px 2px #D2B48C;
-    transition: all 300ms;
-}
-.container__grados .tercero_basico_cuadro .boton_tercero:hover {
-    box-shadow: 2px 2px 50px 5px white;
-}
- /*PÁGINA RESPONSIVE*/
-@media screen and (max-width: 1449px) {
-    .container__grados .primero_basico_cuadro .boton_primero{
-        margin-left: 0;
-    }
-    .container__grados .segundo_basico_cuadro .boton_segundo{
-        margin-left: 0;
-    }
-    .container__grados .tercero_basico_cuadro .boton_tercero{
-        margin-left: 0;
-    }
-
-}
-
-@media screen and (max-width: 1206px){
-    .container__grados .primero_basico_cuadro .boton_primero{
-        width: 213px;
-        height: 81px;
-        margin-left: -150px;
-    }
-    .container__grados .segundo_basico_cuadro .boton_segundo{
-        width: 213px;
-        height: 81px;
-        margin-left: -150px;
-    }
-    .container__grados .tercero_basico_cuadro .boton_tercero{
-        width: 213px;
-        height: 81px;
-        margin-left: -150px;
-    }
-    .container__grados .primero_basico_cuadro .primero_text {
-        font-size: 90px;
-        margin-right: -50px;
-        margin-top: 4%;
-    }
-    .container__grados .segundo_basico_cuadro .segundo_text {
-        font-size: 90px;
-        margin-right: -50px;
-        margin-top: 4%;
-    }
-    .container__grados .tercero_basico_cuadro .tercero_text {
-        font-size: 90px;
-        margin-right: -50px;
-        margin-top: 4%;
-    }
-    .container__menu .menu {
-        align-items: center;
-    }
-    .container__cover .cover .sombra_slogan {
-        width: 790px;
-        height: 159px;
-        flex-shrink: 0;
-        border-radius: 47px;
-    }
-
-}
-
-@media screen and (max-width: 1003px) {
-    /* CONTENEDORES PRINCIPALES */
-    .container__grados .primero_basico_cuadro {
-        height: 500px;
-    }
-    .container__grados .segundo_basico_cuadro {
-        height: 500px;
-    }
-    .container__grados .tercero_basico_cuadro {
-        height: 500px;
-        align-items: center;
-        text-align: center;
-    }
-    /* TEXTO */
-    .container__grados .primero_basico_cuadro .container_text_primero {
-        display: block;
-        position: absolute;
-        margin-top: 10px;
-        top: 820px;
-        z-index: 1;
-        align-items: center;
-    }
-    .container__grados .segundo_basico_cuadro .container_text_segundo {
-        display: block;
-        position: absolute;
-        margin-top: 10px;
-        top: 1320px;
-        z-index: 1;
-        align-items: center;
-    }
-    .container__grados .tercero_basico_cuadro .container_text_tercero {
-        display: block;
-        position: absolute;
-        margin-top: 10px;
-        top: 1820px;
-        z-index: 1;
-        align-items: center;
-    }
-    /* ALINEAMOS TEXTO */
-    .container__grados .primero_basico_cuadro{
-        align-items: center;
-        text-align: center;
-        
-    }
-
-    .container__grados .segundo_basico_cuadro {
-        align-items: center;
-        text-align: center;
-    }
-    .container__grados .tercero_basico_cuadro {
-        align-items: center;
-        text-align: center;
-    }
-    /* BOTONES */
-    .container__grados .primero_basico_cuadro .boton_primero {
-        display: block;
-        position: absolute;
-        z-index: 1;
-        top: 1140px;
-        align-items: center;
-        text-align: center;
-    }
-    .container__grados .segundo_basico_cuadro .boton_segundo{
-        display: block;
-        position: absolute;
-        z-index: 1;
-        top: 1640px;
-        align-items: center;
-        text-align: center;
-    }
-    .container__grados .tercero_basico_cuadro .boton_tercero {
-        display: block;
-        position: absolute;
-        z-index: 1;
-        top: 2140px;
-        align-items: center;
-        text-align: center;
-    }
-    
-}
-
-@media screen and (max-width: 814px) {
-    .container__cover .cover .sombra_slogan {
-        width: 590px;
-        height: 159px;
-        flex-shrink: 0;
-        
-    }
-
-}
-@media screen and (max-width: 600px ){
-    .container__cover .cover .sombra_slogan {
-        width: 390px;
-        height: 109px;
-        flex-shrink: 0;
-        
-    }
-    .container__cover .cover .slogan h1 {
-        font-size: 52px;
-    }
-    .container__grados .primero_basico_cuadro .container_text_primero {
-        font-size: 20px;
-    }
-    .container__grados .segundo_basico_cuadro .container_text_segundo {
-        font-size: 20px;    
-    }
-    .container__grados .tercero_basico_cuadro .container_text_tercero {
-        font-size: 20px;
-    }
-}
