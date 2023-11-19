@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    width: 100%;
+    height: 170px;
+
+    background-color: #D2B48C;
+}
+
+.barra_inicio {
+    justify-content: center;
+    align-items: center;
+}
+.titulo_tercero h1{
+    position: absolute;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 92px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: white;
+    left: 30px;
+    top: 35px;
+}
+ .contenedor_boton {
+    position: absolute;
+    display: flex;
+    width: 313px;
+    height: 81px;
+    left: 1000px;
+    top: 25px;
+}
+.contenedor_boton .boton_inicio {
+    position: absolute;
+    display: flex;
+    left: 100px;
+    top: 25px;
+    width: 313px;
+    height: 81px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background-color: #F5F5DC;
+    color: black;
+    font-size: 24px;
+    justify-content: center;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    font-family: "Monserrat", sans-serif;
+    box-shadow: 2px 2px 50px 1px #D2B48C;
+    transition: all 300ms;
+    border: none;
+}
+.contenedor_boton .boton_inicio:hover{
+    box-shadow: 2px 2px 50px 3px #F5F5DC;
+}
+.container_titulo {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 100px;
+}
+.segundo_titulo {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: 1000px;
+}
+
+.segundo_titulo .materias_txt {
+    font-family: "Bebas Neue", sans-serif; 
+    font-size: 64px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-weight: lighter;
+    color: black;
+}
+.segundo_titulo {
+    background-color: #F5F5DC;
+    width: 468px;
+    height: 142px;
+    flex-shrink: 0;
+    border-radius: 40px;
+}
+
+.contenedor_materias {
+    top: 500px;
+    position: absolute;
+    left: 150px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+.contenedor_materias ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 200px;
+    grid-row-gap: 30px ;
+    
+}
+.contenedor_materias ul li {
+    padding: 10px;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 48px;
+    line-height: normal;
+    margin: 10px;
+    max-width: 254px;
+    word-wrap: break-word;
+
+}
+
+.contenedor_materias ul li a {
+    text-decoration: none;
+    color: black;
+}
