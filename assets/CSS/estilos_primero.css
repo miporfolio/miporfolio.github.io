@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -77,12 +78,49 @@ header {
     align-items: center;
     text-align: center;
     display: flex;
+    font-weight: lighter;
+    color: white
 }
 .segundo_titulo {
-    background-color: rgba(61, 61, 61, 0.751);
+    background-color: black;
     width: 468px;
     height: 142px;
     flex-shrink: 0;
     border-radius: 40px;
-    background: #D9D9D9;
+}
+
+.contenedor_materias {
+    top: 500px;
+    position: absolute;
+    left: 150px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+.contenedor_materias ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 200px;
+    grid-row-gap: 30px ;
+    
+}
+.contenedor_materias ul li {
+    padding: 10px;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 48px;
+    line-height: normal;
+    margin: 10px;
+    max-width: 254px;
+    word-wrap: break-word;
+
+}
+
+.contenedor_materias ul li a {
+    text-decoration: none;
+    color: black;
 }
